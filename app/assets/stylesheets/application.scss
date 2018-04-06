@@ -1,0 +1,29 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  font-family: 'Open Sans', arial, sans-serif;
+ }
+
+@import "bootstrap";
+@import "font-awesome";
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+.dropdown-toggle::after {
+    display:none
+}

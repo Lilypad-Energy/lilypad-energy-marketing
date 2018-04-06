@@ -1,0 +1,44 @@
+.lilpad-logo{
+  h1 {
+    font-size: 14px !important;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+}
+.image-example-wide {
+  margin-top: 45px;
+  background-color: #dddddd;
+  height: 250px;
+}
+.opener{
+  margin-top: 25px;
+}
+.main-navigation{
+  text-transform: uppercase;
+  background-color: #F6F6F6;
+  height: 65px;
+  font-size: 14px;
+  padding-top: 15px;
+}
+.main-navigation-item{
+  color: #151515;
+  letter-spacing: 2px;
+  font-weight: 700;
+  .active{
+    color: #151515;
+  }
+  a:hover {
+    background-color: #077996;
+  }
+}
+.main{
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+footer.market-footer{
+  background-color:#161616;
+  color:#F7F7F7;
+  a{
+    color:#10B5DF;
+  }
+}
