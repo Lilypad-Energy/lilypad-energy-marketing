@@ -25,6 +25,7 @@ gem 'capistrano-rails', '~> 1.2'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-rvm'
 gem 'cloudinary'
+gem "figaro"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
