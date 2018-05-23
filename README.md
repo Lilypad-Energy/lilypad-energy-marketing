@@ -1,24 +1,34 @@
-# README
+# Lilypad Energy Marketing
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### This repository serves as a starting place for the marketing pages of the Lilypad Energy platform.
 
-Things you may want to cover:
+#### Development Setup
 
-* Ruby version
+  - clone repository:
 
-* System dependencies
+```bash
+>> mkdir lilypad && cd lilypad
+>> git clone git@github.com:Tmee/lilypad-energy-marketing.git
+>> cd lilypad-energy-marketing
+```
 
-* Configuration
+ - Install gems and create database:
 
-* Database creation
+```bash
+>> bundle install
+>> bundle exec rake db:setup
 
-* Database initialization
+```
 
-* How to run the test suite
+  - Run Figaro
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+>> bundle exec figaro install
 
-* Deployment instructions
+```
 
-* ...
+  - After Figaro finishes you will need to add the application secrets into the `config/application.yml` file.
+    - Ask Tim for the needed keys
+
+
+
