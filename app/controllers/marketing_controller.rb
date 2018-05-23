@@ -10,12 +10,12 @@ class MarketingController < ApplicationController
   def contact
   end
 
-  def about
+  def energy_user
   end
 
   def grid
   end
 
-  def energy_user
+  def lilypad_example
   end
 end

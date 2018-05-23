@@ -3,7 +3,7 @@
   data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
   <span class="sr-only">Toggle navigation</span>
   </button>
-  <a href="#">
+  <a href="/">
     <%= cl_image_tag('name-logo', width: '200') %>
   </a>
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -20,10 +20,10 @@
         </a>
         <ul class="dropdown-menu">
           <li class="dropdown-item">
-            <a href="/static_pages/grid">For the Grid</a>
+            <%= link_to 'For the Grid', grid_path %>
           </li>
           <li class="dropdown-item">
-            <a href="/static_pages/energy_user">For the People</a>
+            <%= link_to "For the People", energy_user_path %>
           </li>
           <li role="separator" class="divider dropdown-item"></li>
           <li class="dropdown-item">
