@@ -90,48 +90,34 @@ nav.navbar.navbar-default {
   }
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .explainer-title {
   font-weight: bold;
 }
 
-.grid-explainer {
-  .lp-1, .lp-2, .lp-3 {
-    min-width: 65%;
-    height: 55%;
-
-  }
-  .lp-2 {
-    float: right;
-  }
-  .column {
-    clear: both;
-  }
-  .lilypad-box {
-    position: relative;
-    float: left;
-    display: inline-block;
-  }
-  .lilypad-clipart {
-    width: 200px;
-    display: inline-block;
-    padding-top: 3rem;
-    margin: auto;
-  }
-  .explainer-1, .explainer-2, .explainer-3 {
-    max-width: 400px;
-    display: inline-block;
-    margin: 3rem;
-  }
-  .lilypad-number {
-    left: 0;
-    position:absolute;
-    text-align:center;
-    top: 30px;
-    width: 100%;
-    margin-top: 6rem;
-    font-size: 40px;
-  }
+.lilypad-box {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.lilypad-clipart {
+  width: 200px;
+  display: inline-block;
+  padding-top: 3rem;
+  margin: auto;
+}
+.lilypad-number {
+  color:#333;
+  top: 30px;
+  width: 100%;
+  margin-top: 4rem;
+  font-size: 40px;
 }
 // Animations
 
