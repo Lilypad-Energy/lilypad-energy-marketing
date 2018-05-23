@@ -4,9 +4,18 @@ class MarketingController < ApplicationController
   def home
   end
 
-  def products
+  def services
   end
 
-  def projects
+  def contact
+  end
+
+  def about
+  end
+
+  def grid
+  end
+
+  def energy_user
   end
 end

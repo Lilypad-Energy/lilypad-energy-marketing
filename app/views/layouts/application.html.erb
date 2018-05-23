@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= favicon_link_tag "//img1.wsimg.com/isteam/ip/98444f4f-4552-4ee9-968c-7fa7ce74a6d9/logo/2c115f2c-7298-4399-b373-05618ee43d83.png/:/rs=h:125"%>
+    <title>Lilypad</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'shared/navigation' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
+  </body>
+</html>

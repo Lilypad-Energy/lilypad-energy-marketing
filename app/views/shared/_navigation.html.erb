@@ -1,0 +1,46 @@
+<nav class="navbar navbar-light bg-light navbar-expand-md">
+  <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
+  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <span class="sr-only">Toggle navigation</span>
+  </button>
+  <a href="#">
+    <%= cl_image_tag('name-logo', width: '200') %>
+  </a>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active nav-item">
+        <a href="/" class="nav-link">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Services</a>
+      </li>
+      <li class="dropdown nav-item">
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button"
+          aria-haspopup="true" aria-expanded="false">More<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a href="/static_pages/grid">For the Grid</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="/static_pages/energy_user">For the People</a>
+          </li>
+          <li role="separator" class="divider dropdown-item"></li>
+          <li class="dropdown-item">
+            <a href="#our-team">The Team</a>
+          </li>
+          <li role="separator" class="divider dropdown-item"></li>
+          <li class="dropdown-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <form class="form-inline ">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter your ZIP code">
+      </div>
+      <button type="submit" class="btn btn-primary">Find a Lilypad</button>
+    </form>
+  </div>
+</nav>

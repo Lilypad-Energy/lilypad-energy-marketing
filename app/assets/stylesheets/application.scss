@@ -3,27 +3,44 @@
  *= require_self
  */
 
-* {
-  font-family: 'Open Sans', arial, sans-serif;
- }
-
 @import "bootstrap";
 @import "font-awesome";
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
 
-.wrapper {
-  min-height: 100%;
-}
-
-.footer,
-.push {
-  height: 50px;
-}
-
-.dropdown-toggle::after {
-    display:none
+.footer {
+  position: relative;
+  margin-top: 10rem;
+  width: 100%;
+  height: 33rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('http://res.cloudinary.com/lilypad-energy/image/upload/v1527091491/full-grid.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  @media only screen and (max-width: 638px) {
+  }
+  .title-spacer {
+    margin-bottom: 4rem;
+  }
+  .email-LP {
+    &:hover {
+      cursor: pointer;
+      color: green;
+    }
+  }
+  .website-links {
+    text-decoration: none;
+    color: #a8a36b;
+    &:hover {
+      cursor: pointer;
+      color: green;
+    }
+  }
+  p {
+    color: #a8a36b
+  }
+  .footer-contact {
+    margin-bottom: 2rem;
+  }
 }
