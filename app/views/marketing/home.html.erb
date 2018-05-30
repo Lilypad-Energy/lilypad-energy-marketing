@@ -11,9 +11,9 @@
   </div>
 </div>
 
-<div class="row" style="margin-bottom: 25px;margin-top: 25px;">
+<div class="row" style="margin-bottom: 60px;margin-top: 60px;">
   <div class="col text-center">
-    <div class="mission text-center float-left hidden-element willAnimate slideInLeft">
+    <div class="mission text-center float-left hidden-element">
       <div class="col-sm-12">
         <h1>Mission</h1>
         <div class="customUL"></div>
@@ -23,7 +23,7 @@
       </div>
     </div>
   </div>
-  <div class="col text-center">
+  <div class="col text-center animated willSlideInRight">
     <%=cl_image_tag( 'lp-platform', :transformation =>
     { :dpr => "auto", :responsive => true, :width => "auto", :crop => "scale"}) %>
   </div>
@@ -42,27 +42,27 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 explainer-box">
+          <div class="col-md-4 explainer-box animated willSlideInUp">
             <%=cl_image_tag( 'lightblub') %>
-              <h3 class="text-center animated slideInRight">You and The Grid</h3>
+              <h3 class="text-center">You and The Grid</h3>
               <p class="text-center">Modern America understands our grid to be a one-way street: power goes
                   to a home, gets used and gets paid off on your utility bills. Lilypad enables
                   money to flow in both directions by letting users work with the grid to
                   help balance load.</p>
             </%=cl_image_tag( 'lightblub')%>
           </div>
-          <div class="col-md-4 explainer-box">
+          <div class="col-md-4 explainer-box animated willSlideInUp">
             <%=cl_image_tag( 'battery') %>
-              <h3 class="text-center animated slideInRight">Rebalancing</h3>
+              <h3 class="text-center">Rebalancing</h3>
               <p class="text-center">The grid has a finite amount of power and can reach capacity at times.
                   This is where you come in. Whether you have a backup power cell, a set
                   of solar panels, or you&apos;re okay turning off your AC for an hour, Lilypad
                   lets you know when you can help the grid and make money doing it.</p>
             </%=cl_image_tag('battery')%>
           </div>
-          <div class="col-md-4 explainer-box">
+          <div class="col-md-4 explainer-box animated willSlideInUp">
             <%= cl_image_tag('plug') %>
-              <h3 class="text-center animated slideInRight">Saving is earning</h3>
+              <h3 class="text-center">Saving is earning</h3>
               <p class="text-center">All you have to do is find and select the partner program(s) you wouldlike to enroll in. Lilypad takes care of the rest, ultimately sending you, the homeowner, checks for your help supporting the grid.</p>
             </%= cl_image_tag('plug') %>
           </div>
@@ -81,7 +81,7 @@
         <div class="customUL"></div>
         <p class="team-text">We are a team dedicated to building an efficient energy community. Our goals in building a team are no different than the ones for Lilypad: Making a network of many people is far more powerful than building on the shoulders of a few. We are a team of energy professionals, software developers, and dreamers. Together we are helping to build a sustainable and profitable energy economy.</p>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 animated willSlideInRight">
         <div class="row">
           <div class="col-md-6">
             <img src="http://res.cloudinary.com/lilypad-energy/image/upload/v1527091349/henry.jpg" id="henry" title="Henry Meyer" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Henry has worked in the Energy and Advanced Technology fields for over ten years. After a position with EnerNOC in their Energy Markets group, Henry transitioned to Navigant Consulting to work on their Energy Cloud and Military R&D Portfolio Management teams. For the past 2 years, Henry has been engaged to help research institutions and Private Equity firms transition new technologies into global commercial markets.">

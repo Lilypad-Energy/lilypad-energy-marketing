@@ -97,6 +97,21 @@ nav.navbar.navbar-default {
   transform: translate(-50%, -50%);
 }
 
+// explainer pages
+
+.grid-explainer {
+  margin-top: 4rem;
+}
+
+.lilypad-cord {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  z-index: -1;
+  opacity: .5;
+  width: 20%;
+}
+
 .explainer-title {
   font-weight: bold;
 }
@@ -105,6 +120,8 @@ nav.navbar.navbar-default {
   position: relative;
   text-align: center;
   color: white;
+  max-width: 350px;
+  opacity: .9;
 }
 .lilypad-clipart {
   width: 200px;
@@ -113,11 +130,11 @@ nav.navbar.navbar-default {
   margin: auto;
 }
 .lilypad-number {
-  color:#333;
+  color: black;
   top: 30px;
   width: 100%;
   margin-top: 4rem;
-  font-size: 40px;
+  font-size: 60px;
 }
 // Animations
 
@@ -127,17 +144,9 @@ nav.navbar.navbar-default {
 }
 
 .animated {
-  visibility: visible;
+  visibility: hidden;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 200px;
-  }
-
-  to {
-    margin-left: 25%;
-    width: 200px;
-  }
+.slideInUp, .slideInDown, .slideInLeft, .slideInRight, .fadeInUp {
+  visibility: visible;
 }
