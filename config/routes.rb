@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/lilypad-example', to: 'marketing#lilypad_example'
   get '/energy-user', to: 'marketing#energy_user'
   ###################
+
+  resource :email_subscriptions
 end
