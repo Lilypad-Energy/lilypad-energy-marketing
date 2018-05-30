@@ -26,7 +26,7 @@ $(window).scroll(function () {
         var imageHeight = $(this).height();
         var topOfWindow = $(window).scrollTop();
 
-        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+        if (imagePos < topOfWindow + 2*imageHeight && imagePos + imageHeight > topOfWindow) {
             $(this).addClass("slideInLeft");
             $(this).removeClass("willSlideInLeft");
         }
@@ -39,7 +39,7 @@ $(window).scroll(function () {
         var imageHeight = $(this).height();
         var topOfWindow = $(window).scrollTop();
 
-        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+        if (imagePos < topOfWindow + 2*imageHeight && imagePos + imageHeight > topOfWindow) {
             $(this).addClass("slideInRight");
             $(this).removeClass("willSlideInRight");
         }
@@ -65,7 +65,7 @@ $(window).scroll(function () {
         var imageHeight = $(this).height();
         var topOfWindow = $(window).scrollTop();
 
-        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+        if (imagePos < topOfWindow + 2*imageHeight && imagePos + imageHeight > topOfWindow) {
             $(this).addClass("slideInDown");
             $(this).removeClass("willSlideInDown");
         }
