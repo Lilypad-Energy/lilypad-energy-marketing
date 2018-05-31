@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/grid', to: 'marketing#grid'
   get '/lilypad-example', to: 'marketing#lilypad_example'
   get '/energy-user', to: 'marketing#energy_user'
+  get '/forms-examples', to: 'marketing#forms_examples'
   ###################
 
   # Public Resources

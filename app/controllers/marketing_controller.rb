@@ -11,15 +11,12 @@ class MarketingController < ApplicationController
   end
 
   def energy_user
-    @email_subscription = EmailSubscription.new
   end
 
   def grid
   end
 
-  def lilypad_example
-  end
-
-  def new_action
+  def forms_examples
+    @email_subscription = EmailSubscription.new
   end
 end
