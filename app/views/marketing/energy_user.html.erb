@@ -68,7 +68,8 @@
 <script type="text/javascript">
   $('#new_email_subscription').on('ajax:success', function(e, data, status, xhr){
     alert("Thanks!");
-    $('#email_subscription[email]').val('');
+    // figure out how to limit this form.
+    $('#email_subscription_email').val('');
     grecaptcha.reset();
   }).on('ajax:error',function(e, xhr, status, error){
     alert("Sorry, there was an error!");
@@ -76,4 +77,13 @@
 
   });
 
+  $('#new_contact_us').on('ajax:success', function(e, data, status, xhr){
+    alert("Thanks!");
+    // figure out how to limit this form.
+    grecaptcha.reset();
+  }).on('ajax:error',function(e, xhr, status, error){
+    alert("Sorry, there was an error!");
+    grecaptcha.reset();
+
+  });
 </script>
