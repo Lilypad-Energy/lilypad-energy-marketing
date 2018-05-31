@@ -29,7 +29,7 @@ gem 'chartkick'
 gem 'cloudinary'
 gem "figaro"
 gem "recaptcha", require: "recaptcha/rails"
-
+gem 'mailgun-ruby'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
