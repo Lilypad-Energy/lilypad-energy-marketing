@@ -2,9 +2,9 @@ class EmailSubscriptionsController < ApplicationController
   protect_from_forgery with: :null_session
 
   def create
-    subscription = EmailSubscription.new(create_params)
+    @subscription = EmailSubscription.new(create_params)
 
-    if subscription.save
+    if verify_recaptcha(model: @subscription) && @subscription.save
       #  :: ToDo
       # trigger confirmation email
       # trigger new subscriber email

@@ -6,10 +6,10 @@ class EmailSubscription extends React.Component {
     this.state = {
       email: '',
       firstName: ''
-    };
+    }
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange(event) {
@@ -31,7 +31,7 @@ class EmailSubscription extends React.Component {
           email: this.state.email,
         }
       }),
-    });
+    })
   }
 
   render() {
@@ -47,7 +47,7 @@ class EmailSubscription extends React.Component {
         </label>
         <input type="submit" value="Submit" />
       </form>
-    );
+    )
   }
 }
 
