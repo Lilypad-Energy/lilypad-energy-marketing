@@ -19,4 +19,7 @@ class MarketingController < ApplicationController
 
   def lilypad_example
   end
+
+  def new_action
+  end
 end
