@@ -16,6 +16,7 @@ class MarketingController < ApplicationController
   def grid
   end
 
-  def lilypad_example
+  def forms_examples
+    @email_subscription = EmailSubscription.new
   end
 end

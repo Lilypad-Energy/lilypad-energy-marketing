@@ -30,5 +30,13 @@
   - After Figaro finishes you will need to add the application secrets into the `config/application.yml` file.
     - Ask Tim for the needed keys
 
+------------
 
+#### For Contributions:
 
+ - clone repository
+ - setup local environment
+ - create branch off `master`
+ - commit changes to local branch
+ - push local branch to Github
+ - create PR local-branch-with-changes -> master
