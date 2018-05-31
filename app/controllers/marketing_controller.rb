@@ -11,7 +11,7 @@ class MarketingController < ApplicationController
   end
 
   def energy_user
-      @email_subscription = EmailSubscription.new
+    @email_subscription = EmailSubscription.new
   end
 
   def grid
