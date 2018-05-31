@@ -8,6 +8,7 @@ class EmailSubscriptionsController < ApplicationController
       #  :: ToDo
       # trigger confirmation email
       # trigger new subscriber email
+      #  trigger flash success
       head :ok
     else
       #  trigger flash error
