@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get '/energy-user', to: 'marketing#energy_user'
   ###################
 
-  resource :email_subscriptions
+  resource :email_subscriptions, only: [:create]
 end

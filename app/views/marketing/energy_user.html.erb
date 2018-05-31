@@ -1,8 +1,16 @@
-<div class='row'>
-  <div class='col'>
-    <%= form_for @email_subscription do |f| %>
-      <%= f.text_field :first_name %>
-      <%= submit_tag "Submit" %>
-    <% end %>
+<br/>
+<br/>
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        Leave your info for News and Updates!
+      </div>
+      <div class="card-body">
+        <%= react_component("EmailSubscription") %>
+       </div>
+    </div>
   </div>
+  <div class="col-sm-3"/></div>
 </div>

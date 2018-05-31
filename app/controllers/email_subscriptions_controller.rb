@@ -1,13 +1,17 @@
 class EmailSubscriptionsController < ApplicationController
-  protect_from_forgery with: :exception
+  protect_from_forgery with: :null_session
 
   def create
     subscription = EmailSubscription.new(create_params)
 
     if subscription.save
+      #  :: ToDo
+      # trigger confirmation email
+      # trigger new subscriber email
       head :ok
     else
-      head :ok
+      #  trigger flash error
+      render status: 500
     end
   end
 
