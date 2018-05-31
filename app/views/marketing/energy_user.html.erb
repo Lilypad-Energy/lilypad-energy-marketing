@@ -22,6 +22,46 @@
     </div>
   </div>
   <div class="col-sm-4"/></div>
+  <hr/>
+</div>
+
+
+<br/>
+<br/>
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header">
+        Reach out.
+      </div>
+      <div class="card-body">
+        <%= form_tag contact_us_path, method: :post, remote: true, class: 'contact-us-form' do %>
+          <div class="form-group">
+            <%= label_tag(:first_name, "First Name") %>
+            <%= text_field_tag "outreach[first_name]" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag(:last_name, "Last Name") %>
+            <%= text_field_tag "outreach[last_name]" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag(:email, "Email") %>
+            <%= email_field_tag "outreach[email]" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag(:content, "What's on your mind?") %>
+            <%= text_area_tag "outreach[content]" %>
+          </div>
+          <div class="form-group">
+            <%= recaptcha_tags %>
+            <%= submit_tag 'Send Message' %>
+          </div>
+        <% end %>
+       </div>
+    </div>
+  </div>
+  <div class="col-sm-4"/></div>
 </div>
 
 

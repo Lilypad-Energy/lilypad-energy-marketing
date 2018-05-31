@@ -44,3 +44,9 @@
     margin-bottom: 2rem;
   }
 }
+
+.contact-us-form {
+  input{
+    @extend .form-control;
+  }
+}
