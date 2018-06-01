@@ -19,4 +19,8 @@ class MarketingController < ApplicationController
   def forms_examples
     @email_subscription = EmailSubscription.new
   end
+
+  def newnew
+
+  end
 end
