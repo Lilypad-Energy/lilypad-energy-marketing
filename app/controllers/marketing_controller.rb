@@ -17,7 +17,4 @@ class MarketingController < ApplicationController
   def grid
   end
 
-  def forms_examples
-  end
-
 end

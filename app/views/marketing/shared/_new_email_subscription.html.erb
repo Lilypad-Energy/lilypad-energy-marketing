@@ -1,25 +1,26 @@
-<div class="row">
-  <div class="col-sm-4"></div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-header">
-        Leave your info for News and Updates!
+<div class="row email-subscription-form">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+    <div>
+      <div>
+        <h2 class="text-center mb-3">Stay updated!</h2>
       </div>
-      <div class="card-body">
+      <div>
         <%= form_for @email_subscription, remote: true do |f| %>
           <div class="form-group">
-            <%= label_tag(:email, "Email") %>
-            <%= f.email_field :email, required: true, class: 'form-control' %>
+            <%= f.email_field :email, required: true, class: 'form-control', placeholder: 'Email' %>
           </div>
           <div class="form-group">
             <%= recaptcha_tags %>
-            <%= f.submit %>
+          </div>
+          <div class="form-group">
+            <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
           </div>
         <% end %>
        </div>
     </div>
   </div>
-  <div class="col-sm-4"/></div>
+  <div class="col-sm-3"/></div>
   <hr/>
 </div>
 
