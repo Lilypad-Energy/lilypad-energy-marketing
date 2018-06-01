@@ -57,3 +57,12 @@
     </div>
   </div>
 </div>
+
+<!-- to make the lilypad cord grow! -->
+<script>
+  function parallax(){
+    var paraLayer = document.getElementById('lilypad-cord-grow');
+    paraLayer.style.top = (window.pageYOffset / 1)+'px';
+  }
+  window.addEventListener("scroll", parallax, false);
+</script>
