@@ -103,15 +103,6 @@ nav.navbar.navbar-default {
   margin-top: 4rem;
 }
 
-.lilypad-cord {
-  position: absolute;
-  left: 40%;
-  top: 0;
-  z-index: -1;
-  opacity: .5;
-  width: 20%;
-}
-
 .explainer-title {
   font-weight: bold;
 }
@@ -136,6 +127,25 @@ nav.navbar.navbar-default {
   margin-top: 4rem;
   font-size: 60px;
 }
+
+.lilypad-cord {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  z-index: -2;
+  opacity: .5;
+  width: 20%;
+}
+
+.parallax-lilypad-cord-grow {
+  position: fixed;
+  min-height: 50rem;
+  width: 100%;
+  background: white;
+  z-index: -1;
+  top: 0;
+}
+
 // Animations
 
 .delay-animation {

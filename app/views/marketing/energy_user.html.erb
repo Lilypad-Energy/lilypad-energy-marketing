@@ -1,5 +1,7 @@
 <div class="container lilypad-explainer">
   <%= image_tag('lilypad-cord.png', :class => 'lilypad-cord') %>
+  <div class="space-for-parallax"></div>
+  <div class="parallax-lilypad-cord-grow" id='lilypad-cord-grow'></div>
   <h1 class="explainer-title text-center title">Lilypad for the Grid</h1>
   <div class="container">
     <div class="row">
@@ -57,3 +59,13 @@
     </div>
   </div>
 </div>
+
+
+<!-- to make the lilypad cord grow! -->
+<script>
+  function parallax(){
+    var paraLayer = document.getElementById('lilypad-cord-grow');
+    paraLayer.style.top = (window.pageYOffset / 1)+'px';
+  }
+  window.addEventListener("scroll", parallax, false);
+</script>
