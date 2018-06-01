@@ -5,11 +5,14 @@ nav.navbar.navbar-default {
 .navbar-form {
   display: block;
   float: right;
+  .dropdown-menu {
+    background-color: lightgrey;
+  }
 }
 
 .customHr {
   display: inline-block;
-  margin: auto;
+  margin: 3rem auto;
   width: 100%;
   border: 1px solid silver;
 }
@@ -135,6 +138,13 @@ nav.navbar.navbar-default {
   z-index: -2;
   opacity: .5;
   width: 40%;
+  @media screen and (max-width: 992px) {
+    width: 75%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 110%;
+    left: 10%;
+  }
 }
 
 .parallax-lilypad-cord-grow {
@@ -157,6 +167,6 @@ nav.navbar.navbar-default {
   visibility: hidden;
 }
 
-.slideInUp, .slideInDown, .slideInLeft, .slideInRight, .fadeInUp {
+.slideInUp, .slideInDown, .slideInLeft, .slideInRight, .fadeInUp, .fadeInDown, .fadeInLeft, .fadeInRight {
   visibility: visible;
 }
