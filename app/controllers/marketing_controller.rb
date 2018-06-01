@@ -2,6 +2,7 @@ class MarketingController < ApplicationController
   protect_from_forgery with: :exception
 
   def home
+    @email_subscription = EmailSubscription.new
   end
 
   def services
@@ -17,6 +18,6 @@ class MarketingController < ApplicationController
   end
 
   def forms_examples
-    @email_subscription = EmailSubscription.new
   end
+
 end
