@@ -3,16 +3,19 @@
   <div class="col-sm-6">
     <div>
       <div>
-        <h2 class="text-center mb-3">Stay updated!</h2>
+        <h2 class="text-center mb-5">Stay updated!</h2>
+        <p>
+          Join our newsletter subscription to get emails about our progress
+        </p>
       </div>
       <div>
         <%= form_for @email_subscription, remote: true do |f| %>
           <div class="form-group">
             <%= f.email_field :email, required: true, class: 'form-control', placeholder: 'Email' %>
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <%= recaptcha_tags %>
-          </div>
+          </div> -->
           <div class="form-group">
             <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
           </div>
