@@ -31,12 +31,17 @@ nav.navbar.navbar-default {
 
 .lp-jumbotron {
   height: 100vh;
-  width: auto;
+  width: 105%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   h1 {
-    padding-top: 14rem;
+    @media screen and (max-width: 668px) {
+      padding-top: 8rem;;
+    }
+    @media screen and (min-width: 668px) {
+      padding-top: 14rem;;
+    }
   }
   h1, p {
     color: white;
@@ -71,7 +76,7 @@ nav.navbar.navbar-default {
     height: 200px;
     display: block;
     margin: auto;
-    color: green;
+    opacity: 0.6;
   }
 }
 
