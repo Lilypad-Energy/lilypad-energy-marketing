@@ -19,3 +19,55 @@
 //= require bootstrap
 //= require d3
 //= require_tree .
+
+$(window).scroll(function () {
+    $('.willSlideInLeft').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + 2*imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideInLeft");
+            $(this).removeClass("willSlideInLeft");
+        }
+    });
+});
+
+$(window).scroll(function () {
+    $('.willSlideInRight').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + 2*imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideInRight");
+            $(this).removeClass("willSlideInRight");
+        }
+    });
+});
+
+$(window).scroll(function () {
+    $('.willSlideInUp').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideInUp");
+            $(this).removeClass("willSlideInUp");
+        }
+    });
+});
+
+$(window).scroll(function () {
+    $('.willSlideInDown').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + 2*imageHeight && imagePos + imageHeight > topOfWindow) {
+            $(this).addClass("slideInDown");
+            $(this).removeClass("willSlideInDown");
+        }
+    });
+});

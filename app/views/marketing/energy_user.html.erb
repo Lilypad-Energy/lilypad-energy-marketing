@@ -1,0 +1,70 @@
+<div class="container lilypad-explainer">
+  <%= image_tag('lilypad-cord2.png', :class => 'lilypad-cord') %>
+  <div class="parallax-lilypad-cord-grow" id='lilypad-cord-grow'></div>
+  <h1 class="explainer-title text-center title">Lilypad for Energy Users</h1>
+  <div class="container">
+    <div class="row">
+      <div class="lilypad-box animated fadeInLeft">
+        <%= cl_image_tag('lilypad-clipart', width: '200') %>
+        <div class="lilypad-number centered">1</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <h2 class="title">Connect Your Data</h2>
+        <p>
+          Create a Lilypad Profile, enable our connection to
+          your electricty usage data from your Utility and Customize your profile with
+          all of the energy-using appliance you own.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8"></div>
+      <div class="lilypad-box animated willSlideInRight">
+        <%= cl_image_tag('lilypad-clipart', width: '200') %>
+        <div class="lilypad-number centered">2</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6"></div>
+      <div class="col-sm-4">
+        <h2 class="title">Reduce Consumption</h2>
+        <p>
+          Lilypad's smart platform analyzes the energy market in your area.
+          You will get notifications sent directly to your phone on when to
+          reduce consumption for a few hours.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="lilypad-box animated willSlideInLeft">
+        <%= cl_image_tag('lilypad-clipart', width: '200') %>
+        <div class="lilypad-number centered">3</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <h2 class="title">Get Paid</h2>
+        <p>
+          By decreasing your electricity consumption, you wont just reduce
+          bills - you will earn cash payments! You don't need a cape to save
+          the world and get paid - Just <a href="https://lilypad.energy/client-login">create a profile</a>!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- to make the lilypad cord grow! -->
+<script>
+  function parallax(){
+    var paraLayer = document.getElementById('lilypad-cord-grow');
+    paraLayer.style.top = (window.pageYOffset / 1)+'px';
+  }
+  window.addEventListener("scroll", parallax, false);
+</script>
