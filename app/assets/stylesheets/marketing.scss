@@ -9,7 +9,7 @@ nav.navbar.navbar-default {
 
 .customHr {
   display: inline-block;
-  margin: auto;
+  margin: 3rem auto;
   width: 100%;
   border: 1px solid silver;
 }
@@ -28,7 +28,7 @@ nav.navbar.navbar-default {
 
 .lp-jumbotron {
   height: 100vh;
-  width: auto;
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,6 +37,7 @@ nav.navbar.navbar-default {
   }
   h1, p {
     color: white;
+    margin: 2rem;
   }
   button {
     width: 250px;
@@ -147,6 +148,6 @@ nav.navbar.navbar-default {
   visibility: hidden;
 }
 
-.slideInUp, .slideInDown, .slideInLeft, .slideInRight, .fadeInUp {
+.slideInUp, .slideInDown, .slideInLeft, .slideInRight, .fadeInUp, .fadeInDown .fadeInLeft .fadeInRight {
   visibility: visible;
 }
